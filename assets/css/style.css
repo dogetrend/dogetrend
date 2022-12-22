@@ -392,3 +392,22 @@ header.head {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 60px; opacity: 0;}
 }
+
+.partner-content {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.partner-content img{
+    width: 80px;
+    height: 80px;
+}
+.partner-content h3{
+    width: auto;
+    color: #ffa200;
+    text-transform: uppercase;
+    margin: 0;
+}
