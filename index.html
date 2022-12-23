@@ -1,304 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doge Trend</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/logo.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
 
-  <body>
-    <div id="toast"><div id="img"><img src="assets/images/logo.png" alt=""></div><div id="desc">Copy success</div></div>
-    <div class="app">
-      <header class="head">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="assets/images/logo.png" alt="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doge Trend</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div id="toast">
+    <div id="img"><img src="assets/images/logo.png" alt=""></div>
+    <div id="desc">Copy success</div>
+  </div>
+  <div class="app">
+    <header class="head">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="logo" />
+          </a>
+          <li class="nav-item dropdown d-block d-md-none">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Doge Trends
             </a>
-            <li class="nav-item dropdown d-block d-md-none">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Doge Trends
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#manifest">Manifesto</a></li>
-                <li><a class="dropdown-item" href="#future">Featute</a></li>
-                <li><a class="dropdown-item" href="#roadmap">Roadmap</a></li>
-                <li><a class="dropdown-item" href="#partner">Partner</a></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#manifest">Manifesto</a></li>
+              <li><a class="dropdown-item" href="#future">Featute</a></li>
+              <li><a class="dropdown-item" href="#roadmap">Roadmap</a></li>
+              <li><a class="dropdown-item" href="#partner">Partner</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#token">Tokenomics</a></li>
+              <li><a class="dropdown-item" href="assets/DogetrendWhitepaper_v1.pdf">WhitePaper</a></li>
+            </ul>
+          </li>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Doge Trend
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#manifest">Manifesto</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#future">Feature</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#roadmap">Roadmap</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#partner">Partner</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#token">Tokenomics</a></li>
+                  <li><a class="dropdown-item" href="assets/DogetrendWhitepaper_v1.pdf">WhitePaper</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#manifest">Manifesto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#future">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#roadmap">Roadmap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partner">Partner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#token">Tokenomics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="assets/DogetrendWhitepaper_v1.pdf">WhitePaper</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="banner container">
+        <div class="row">
+          <div class="content col-12 col-md-6">
+            <div class="container">
+              <h2 class="animate__animated animate__backInRight" id="manifest">
+                Turn crisis <br />
+                into <br />
+                opportunity.
+              </h2>
+              <ul class="banner-description animate__animated animate__backInUp">
                 <li>
-                  <hr class="dropdown-divider" />
+                  DogeTrend cryptocurrency was born amid investor's loss of confidence in the Crypto market and economic
+                  downturn.
                 </li>
-                <li><a class="dropdown-item" href="#token">Tokenomics</a></li>
-              </ul>
-            </li>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Doge Trend
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#manifest">Manifesto</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#future">Feature</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#roadmap">Roadmap</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#partner">Partner</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li><a class="dropdown-item" href="#token">Tokenomics</a></li>
-                  </ul>
+                <li>
+                  DogeTrend is on a mission to transform investors to bet, get rewarded,
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#manifest"
-                    >Manifesto</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#future">Feature</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#roadmap">Roadmap</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#partner">Partner</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#token">Tokenomics</a>
+                <li>
+                  Create unique trading strategies, predict market movements, find big spreads, monitor and copy the
+                  most
+                  profitable wallets, etc.
                 </li>
               </ul>
+              <a href="https://www.pinksale.finance/launchpad/0x447cE639254D38009377507E23D0D581A6Bff15E?chain=BSC"
+                class="btn btn-danger buy animate__animated animate__heartBeat">
+                Buy at Pinksale
+              </a>
             </div>
           </div>
-        </nav>
-      </header>
-      <main class="main">
-        <div class="banner mt-5 container">
-          <div class="row">
-            <div class="content col-12 col-md-6">
-              <img
+          <div class="col-12 col-md-6">
+            <!-- <img
                 src="assets/images/doge-trend-banner.png"
                 width="100%"
                 alt="banner"
                 class="animate__animated animate__flash"
-              />
+              /> -->
+          </div>
+        </div>
+      </div>
+      <div class="last-news" id="future">
+        <div class="container">
+          <div class="row content-last-news mt-4">
+            <div class="box col-12 col-md-7">
+              <div class="content">
+                <div class="title">
+                  <div class="icon bel"></div>
+                  <h3>Latest news</h3>
+                </div>
+                <img src="assets/images/tool-1.png?v=1" alt="tool1" width="100%"
+                  class="animate__animated animate__slideInUp" />
+                <p class="animate__animated animate__slideInLeft">
+                  Stay up-to-date with the latest political finance news,
+                  giving you an overview of your investments and being able to
+                  buy or sell before the news is out, thanks to the AI
+                  ​​system that updates the fastest information from over the
+                  world. 10,000 news websites.
+                </p>
+              </div>
             </div>
-            <div class="content col-12 col-md-6">
-              <div class="container">
-                <h2 class="animate__animated animate__backInRight" id="manifest">
-                  Turn crisis <br />
-                  into <br />
-                  opportunity.
-                </h2>
-                <ul
-                  class="banner-description animate__animated animate__backInUp"
-                >
-                  <li>
-                    DogeTrend cryptocurrency was born amid investor's loss of
-                    confidence in the Crypto market and economic downturn.
-                  </li>
-                  <li>
-                    DogeTrend has a mission to select quality projects with real
-                    potential to Make Crypto Great Again.
-                  </li>
-                  <li>
-                    For User: Provide onchain data analysis platform on the
-                    Binance Smart Chain platform. Create unique trading
-                    strategies, anticipate market movements, search for big
-                    spreads
-                  </li>
-                  <li>
-                    For Project Owner: For project owners: Provide a smart
-                    banner advertising platform that needs millions of users.
-                    Pay with $DogeTrend token and this token will be transferred
-                    to the Staking pool.
-                  </li>
-                </ul>
-                <a href="https://www.pinksale.finance/launchpad/0x447cE639254D38009377507E23D0D581A6Bff15E?chain=BSC"
-                  class="btn btn-danger buy animate__animated animate__heartBeat"
-                >
-                  Buy at Pinksale
-                </a>
+            <div class="box col-12 col-md-1"></div>
+            <div class="col-12 col-md-4">
+              <div class="content">
+                <div class="title">
+                  <div class="icon search"></div>
+                  <h3>Search for potential project proposals:</h3>
+                </div>
+                <img src="assets/images/tool-2.png?v=1" alt="tool1" width="100%"
+                  class="animate__animated animate__slideInUp" />
+                <p class="animate__animated animate__slideInLeft">
+                  Using AI data, the project is then evaluated by a team of
+                  experts based on many factors Find the best gems and avoid
+                  the scams.
+                </p>
+              </div>
+              <div class="content">
+                <div class="title">
+                  <div class="icon chart"></div>
+                  <h3>DEX TRENDING</h3>
+                </div>
+                <img src="assets/images/tool-3.png?v=1" alt="tool1" width="100%"
+                  class="animate__animated animate__slideInUp" />
+                <p class="animate__animated animate__slideInLeft">
+                  Select the top 10 projects according to many different
+                  criteria. Helping investors to select projects to invest
+                  quickly, catching up with trends.
+                </p>
+              </div>
+              <div class="content">
+                <div class="title">
+                  <div class="icon wallet"></div>
+                  <h3>WALLET INFORMATION</h3>
+                </div>
+                <img src="assets/images/tool-4.png?v=1" alt="tool1" width="100%"
+                  class="animate__animated animate__slideInUp" />
+                <p class="animate__animated animate__slideInLeft">
+                  Can you track 100 shark wallets what are they doing? What do
+                  investors tend to do and what projects do they own? Market
+                  trend analysis
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="last-news" id="future">
-          <div class="container">
-            <div class="row content-last-news mt-4">
-              <div class="box col-12 col-md-7">
-                <div class="content">
-                  <div class="title">
-                    <div class="icon bel"></div>
-                    <h3>Latest news</h3>
-                  </div>
-                  <img
-                    src="assets/images/tool-1.png?v=1"
-                    alt="tool1"
-                    width="100%"
-                    class="animate__animated animate__slideInUp"
-                  />
-                  <p class="animate__animated animate__slideInLeft">
-                    Stay up-to-date with the latest political finance news,
-                    giving you an overview of your investments and being able to
-                    buy or sell before the news is out, thanks to the AI
-                    ​​system that updates the fastest information from over the
-                    world. 10,000 news websites.
-                  </p>
-                </div>
-              </div>
-              <div class="box col-12 col-md-1"></div>
-              <div class="col-12 col-md-4">
-                <div class="content">
-                  <div class="title">
-                    <div class="icon search"></div>
-                    <h3>Search for potential project proposals:</h3>
-                  </div>
-                  <img
-                    src="assets/images/tool-2.png?v=1"
-                    alt="tool1"
-                    width="100%"
-                    class="animate__animated animate__slideInUp"
-                  />
-                  <p class="animate__animated animate__slideInLeft">
-                    Using AI data, the project is then evaluated by a team of
-                    experts based on many factors Find the best gems and avoid
-                    the scams.
-                  </p>
-                </div>
-                <div class="content">
-                  <div class="title">
-                    <div class="icon chart"></div>
-                    <h3>DEX TRENDING</h3>
-                  </div>
-                  <img
-                    src="assets/images/tool-3.png?v=1"
-                    alt="tool1"
-                    width="100%"
-                    class="animate__animated animate__slideInUp"
-                  />
-                  <p class="animate__animated animate__slideInLeft">
-                    Select the top 10 projects according to many different
-                    criteria. Helping investors to select projects to invest
-                    quickly, catching up with trends.
-                  </p>
-                </div>
-                <div class="content">
-                  <div class="title">
-                    <div class="icon wallet"></div>
-                    <h3>WALLET INFORMATION</h3>
-                  </div>
-                  <img
-                    src="assets/images/tool-4.png?v=1"
-                    alt="tool1"
-                    width="100%"
-                    class="animate__animated animate__slideInUp"
-                  />
-                  <p class="animate__animated animate__slideInLeft">
-                    Can you track 100 shark wallets what are they doing? What do
-                    investors tend to do and what projects do they own? Market
-                    trend analysis
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="introduce mt-5">
-          <div class="container">
-            <h3 class="title mb-5 animate__animated animate__flipInY">
-              Introducing potential projects: <br />
-              Potential projects that meet the following criteria:
-            </h3>
-            <div class="row content">
-              <div
-                class="item col-12 col-md-6 animate__animated animate__backInLeft"
-              >
-                <img src="assets/images/chart2.png?v=1" alt="" />
-                <span>1. Proof of financial liquidity</span>
-              </div>
-              <div
-                class="item col-12 col-md-6 animate__animated animate__backInRight"
-              >
-                <img src="assets/images/kyc.png?v=1" alt="" />
-                <span>2. KYC, Audit</span>
-              </div>
-              <div
-                class="item col-12 col-md-6 animate__animated animate__backInLeft"
-              >
-                <img src="assets/images/own.png?v=1" alt="" />
-                <span>4. Own Dogetrend token as a staking</span>
-              </div>
-              <div
-                class="item col-12 col-md-6 animate__animated animate__backInRight"
-              >
-                <img src="assets/images/prove.png?v=1" alt="" />
-                <span
-                  >3. Prove the real project, the project completion
-                  schedule.</span
-                >
-              </div>
-            </div>
-          </div>
-          <h3 class="title container animate__animated animate__flipInY">
-            We will recommend and refer you to these high profit opportunity
-            projects!
+      </div>
+      <div class="introduce mt-5">
+        <div class="container">
+          <h3 class="title mb-5 animate__animated animate__flipInY">
+            Introducing potential projects: <br />
+            Potential projects that meet the following criteria:
           </h3>
+          <div class="row content">
+            <div class="item col-12 col-md-6 animate__animated animate__backInLeft">
+              <img src="assets/images/chart2.png?v=1" alt="" />
+              <span>1. Proof of financial liquidity</span>
+            </div>
+            <div class="item col-12 col-md-6 animate__animated animate__backInRight">
+              <img src="assets/images/kyc.png?v=1" alt="" />
+              <span>2. KYC, Audit</span>
+            </div>
+            <div class="item col-12 col-md-6 animate__animated animate__backInLeft">
+              <img src="assets/images/own.png?v=1" alt="" />
+              <span>4. Own Dogetrend token as a staking</span>
+            </div>
+            <div class="item col-12 col-md-6 animate__animated animate__backInRight">
+              <img src="assets/images/prove.png?v=1" alt="" />
+              <span>3. Prove the real project, the project completion
+                schedule.</span>
+            </div>
+          </div>
         </div>
-        <div class="road-map container" id="roadmap">
-          <img
-            class="animate__animated animate__tada"
-            src="assets/images/road-map.png?v=1"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <!-- <div class="chart container">
+        <h3 class="title container animate__animated animate__flipInY">
+          We will recommend and refer you to these high profit opportunity
+          projects!
+        </h3>
+      </div>
+      <div class="road-map container" id="roadmap">
+        <img class="animate__animated animate__tada" src="assets/images/road-map.png?v=1" width="100%" alt="" />
+      </div>
+      <!-- <div class="chart container">
           <h2 class="title">Chart</h2>
           <style>
             #dexscreener-embed {
@@ -330,17 +265,17 @@
             <div class="bb">Doge Trend Chart</div>
           </div>
         </div> -->
-        <div class="why" id="token">
-          <div class="content container animate__animated animate__backInUp">
-            <div class="row">
-              <div class="col-12 col-md-6 why-content">
-                <h2 class="title">Why use DOGETREND</h2>
-                <table>
-                  <tr>
-                    <td>TOKEN NAME</td>
-                    <td>DOGETREND</td>
-                  </tr>
-                  <!-- <tr>
+      <div class="why" id="token">
+        <div class="content container animate__animated animate__backInUp">
+          <div class="row">
+            <div class="col-12 col-md-6 why-content">
+              <h2 class="title">Why use DOGETREND</h2>
+              <table>
+                <tr>
+                  <td>TOKEN NAME</td>
+                  <td>DOGETREND</td>
+                </tr>
+                <!-- <tr>
                     <td>CONTRACT ERC20</td>
                     <td>
                       <a href="#" class="ca">0xfb7b4564...2777c75a </a
@@ -351,122 +286,121 @@
                       ></i>
                     </td>
                   </tr> -->
-                  <tr>
-                    <td>CONTRACT BEP20</td>
-                    <td>
-                      <a href="#" class="ca">0xE5f30...F1D3AFFf2A </a
-                      ><i
-                        onClick="copyPay('0xE5f30eFA4526D86c4DC020fd8087aDF1D3AFFf2A')"
-                        class="fa fa-clipboard copy"
-                        aria-hidden="true"
-                      ></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>TOTAL SUPPLY</td>
-                    <td>100,000,000,000,000,000 DOGETREND</td>
-                  </tr>
-                  <tr>
-                    <td>TOKENS FOR PRESALE</td>
-                    <td>13,000,000,000,000,000 DOGETREND</td>
-                  </tr>
-                  <tr>
-                    <td>TOKENS FOR LIQUIDITY</td>
-                    <td>7,068,000,000,000,000 DOGETREND</td>
-                  </tr>
-                </table>
-                <span class="small">
-                  Owning Dogetrend token you can profit from Staking with a
-                  profit of up to 200%/year.
-                  <br />
-                  from projects that we selectively moderate.
-                </span>
-                <div class="why-descriptions">
-                  "Dogetrend supply is deflationary, every month, Dogetrend Team
-                  burns an amount of Dogetrend obtained from purchases with
-                  project profits
-                </div>
-
-                <a href="https://www.pinksale.finance/launchpad/0x447cE639254D38009377507E23D0D581A6Bff15E?chain=BSC" class="btn btn-danger buy">Buy at Pinksale</a>
-              </div>
-              <div class="col-12 col-md-6">
-                <img src="assets/images/token-nomic.png" width="100%" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="dog dog1">
-            <img src="assets/images/dog1.png" alt="" />
-          </div>
-          <div class="dog dog2">
-            <img src="assets/images/dog2.png" alt="" />
-          </div>
-        </div>
-
-        <div class="why" id="partner">
-          <div class="content container animate__animated animate__backInUp">
-            <div class="row">
-              <h2 class="title" style="justify-content: center;">PARTNERSHIP</h2>
-              <a href="https://www.pinksale.finance/" class="col-12 col-md-3 partner-content">
-                <img src="assets/images/pinksale.png" alt="pinksale">
-                <h3>pinksale</h3>
-              </a>
-              <a href="https://www.dexview.com/" class="col-12 col-md-3 partner-content">
-                <img src="assets/images/dexview.webp" alt="pinksale">
-                <h3>dexview</h3>
-              </a>
-              <a href="https://froginu.io/" class="col-12 col-md-3 partner-content">
-                <img src="assets/images/frog.JPG" alt="pinksale">
-                <h3>froginu</h3>
-              </a>
-              <a href="https://chihuahuabsc.io/" class="col-12 col-md-3 partner-content">
-                <img src="assets/images/chihuahua.JPG" alt="pinksale">
-                <h3>chihuahuabsc</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <span
-            >All content available on our website, on hyperlinked websites, and
-            on applications, forums, blogs, social media accounts and other
-            platforms associated with DogeTrend is intended solely to provide
-            you with general information. We make no warranties of any kind with
-            respect to our content, including, but not limited to, the accuracy
-            and currency of the information. None of the content we provide
-            should be construed as financial, legal or any other type of advice
-            on which you may specifically rely for any purpose. Any use or
-            reliance you place on our content is solely at your own risk. What
-            you should do is conduct your own research, review and analysis, and
-            verify our content before relying on it. Trading is a high-risk
-            activity that can result in significant losses, so you should
-            consult with your financial advisor before making any decisions.
-            Nothing on our Site should be considered an invitation or offer to
-            take any action.</span
-          >
-          <div class="content-bottom mt-5 row">
-            <div class="col-12 col-md-6">
-              <span>
-                © dogetrend.io 2022 | Ads & Marketing:
-                admin@dogetrend.io
+                <tr>
+                  <td>CONTRACT BEP20</td>
+                  <td>
+                    <a href="#" class="ca">0xE5f30...F1D3AFFf2A </a><i
+                      onClick="copyPay('0xE5f30eFA4526D86c4DC020fd8087aDF1D3AFFf2A')" class="fa fa-clipboard copy"
+                      aria-hidden="true"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>TOTAL SUPPLY</td>
+                  <td>100,000,000,000,000,000 DOGETREND</td>
+                </tr>
+                <tr>
+                  <td>TOKENS FOR PRESALE</td>
+                  <td>13,000,000,000,000,000 DOGETREND</td>
+                </tr>
+                <tr>
+                  <td>TOKENS FOR LIQUIDITY</td>
+                  <td>7,068,000,000,000,000 DOGETREND</td>
+                </tr>
+              </table>
+              <span class="small">
+                Owning Dogetrend token you can profit from Staking with a
+                profit of up to 200%/year.
+                <br />
+                from projects that we selectively moderate.
               </span>
-            </div>
-            <div class="social col-12 col-md-6">
-              <a href="https://t.me/Dogetrendgroup" class="icon-social"
-                ><img src="assets/images/icon-telegram.png" alt=""
-              /></a>
-              <a href="https://t.me/Dogetrendchannel" class="icon-social"
-                ><img src="assets/images/icon-telegram.png" alt=""
-              /></a>
-              <a href="https://t.me/Dogetrendchinese" class="icon-social"
-                ><img src="assets/images/icon-telegram.png" alt=""
-              /></a>
-              <a href="https://twitter.com/DogeTrendToken" class="icon-social"
-                ><img src="assets/images/icon-twitter.png" alt=""
-              /></a>
+              <div class="why-descriptions">
+                "Dogetrend supply is deflationary, every month, Dogetrend Team
+                burns an amount of Dogetrend obtained from purchases with
+                project profits
+              </div>
 
-              <!-- <a href="https://t.me/Dogetrendchannel" class="icon-social"
+              <a href="https://www.pinksale.finance/launchpad/0x447cE639254D38009377507E23D0D581A6Bff15E?chain=BSC"
+                class="btn btn-danger buy">Buy at Pinksale</a>
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="assets/images/token-nomic.png?v=1" width="100%" alt="" />
+              <ul class="tax">
+                <li>Buy/sell: 8%</li>
+                <li>3% Marketing</li>
+                <li>2% Development</li>
+                <li>1% Liquidity</li>
+                <li>2% Staking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dog dog1">
+          <img src="assets/images/dog1.png" alt="" />
+        </div>
+        <div class="dog dog2">
+          <img src="assets/images/dog2.png" alt="" />
+        </div>
+      </div>
+
+      <div class="why" id="partner">
+        <div class="content container animate__animated animate__backInUp">
+          <div class="row">
+            <h2 class="title" style="justify-content: center;">PARTNERSHIP</h2>
+            <a href="https://www.pinksale.finance/" class="col-12 col-md-3 partner-content">
+              <img src="assets/images/pinksale.png" alt="pinksale">
+              <h3>pinksale</h3>
+            </a>
+            <a href="https://www.dexview.com/" class="col-12 col-md-3 partner-content">
+              <img src="assets/images/dexview.webp" alt="pinksale">
+              <h3>dexview</h3>
+            </a>
+            <a href="https://froginu.io/" class="col-12 col-md-3 partner-content">
+              <img src="assets/images/frog.JPG" alt="pinksale">
+              <h3>froginu</h3>
+            </a>
+            <a href="https://chihuahuabsc.io/" class="col-12 col-md-3 partner-content">
+              <img src="assets/images/chihuahua.JPG" alt="pinksale">
+              <h3>chihuahuabsc</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <span>All content available on our website, on hyperlinked websites, and
+          on applications, forums, blogs, social media accounts and other
+          platforms associated with DogeTrend is intended solely to provide
+          you with general information. We make no warranties of any kind with
+          respect to our content, including, but not limited to, the accuracy
+          and currency of the information. None of the content we provide
+          should be construed as financial, legal or any other type of advice
+          on which you may specifically rely for any purpose. Any use or
+          reliance you place on our content is solely at your own risk. What
+          you should do is conduct your own research, review and analysis, and
+          verify our content before relying on it. Trading is a high-risk
+          activity that can result in significant losses, so you should
+          consult with your financial advisor before making any decisions.
+          Nothing on our Site should be considered an invitation or offer to
+          take any action.</span>
+        <div class="content-bottom mt-5 row">
+          <div class="col-12 col-md-6">
+            <span>
+              © dogetrend.io 2022 | Ads & Marketing:
+              admin@dogetrend.io
+            </span>
+          </div>
+          <div class="social col-12 col-md-6">
+            <a href="https://t.me/Dogetrendgroup" class="icon-social"><img src="assets/images/icon-telegram.png"
+                alt="" /></a>
+            <a href="https://t.me/Dogetrendchannel" class="icon-social"><img src="assets/images/icon-telegram.png"
+                alt="" /></a>
+            <a href="https://t.me/Dogetrendchinese" class="icon-social"><img src="assets/images/icon-telegram.png"
+                alt="" /></a>
+            <a href="https://twitter.com/DogeTrendToken" class="icon-social"><img src="assets/images/icon-twitter.png"
+                alt="" /></a>
+
+            <!-- <a href="https://t.me/Dogetrendchannel" class="icon-social"
                 ><img src="assets/images/icon-twitter.png" alt=""
               /></a>
               <a href="https://t.me/Dogetrendchinese" class="icon-social"
@@ -475,19 +409,23 @@
               <a href="https://twitter.com/DogeTrendToken" class="icon-social"
                 ><img src="assets/images/icon-youtube.png" alt=""
               /></a> -->
-            </div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="assets/js/app.js"></script>
-  </body>
+      </div>
+    </footer>
+  </div>
+
+  <div class="popup active">
+    <div class="close">X</div>
+    <a target="_blank" href="https://gleam.io/W2hRP/doge-trend-token-airdrop">
+      <img src="https://user-assets.out.sh/user-assets/2061526/4kCo7ZunUvmYRtit/dir.png" alt="ads">
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>
